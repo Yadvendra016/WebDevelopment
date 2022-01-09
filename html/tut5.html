@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <!-- this is syntax of for type -->
+    <form action="backend.php">
+
+    <!-- input types means we can enter any data on the website only here we enter text so it takes text data which is access in the website -->
+    <div>
+    name :<input type="text">
+    </div>
+    <!-- if we write this inside div then it appears in new line we can also use <br></br> but we can use in css. and for upper name here we can also use br  -->
+    <div>
+        role :<input type="text">
+    </div>
+
+    <!-- for email this is use just write input:em and then enter then automatically written 
+    Here by name backend recoginse this tag (input)  -->
+    <div>
+        emale: <input type="email" name="my email" id=""> 
+    </div>
+
+    
+    <!-- for intput date in website it gives us the coloumn to input dates same as time -->
+    <div>
+        Date:  <input type="date" name="" id="">
+    </div>
+    
+    <!-- for number enter  -->
+    <!-- by uaing label by clicking on item its box selected NOTE-- which write in id same write in for -->
+    <label for="number"> number</label>
+    <div>
+        <input type="number" name="my number" id="number">
+    </div>
+    
+    <!-- for checkBox -->
+    <label for="check"></label>
+    <div>
+        Are you eligible <input type="checkbox" name="checkThis" id="check">
+    </div>
+    
+    <!-- radio button - this is also a check box here we given male and female with same name "myGender"  so in the website we only check only one box -->
+    <div>
+        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender" > other <input type="radio" name="other" id="">
+    </div>
+
+    <!-- for write a paragaraph or lots of text we use textarea -->
+    <div>
+        <br>
+       write about yourself: <textarea name="myText" id="" cols="30" rows="10"></textarea>
+    </div>
+
+      <!--for using select option we can use select tag and for option inside select we use option  
+    if we write selected in front of indiga so it by defoul selected in the option whiic shows on website-->
+    <div>
+      <label for="car">car</label>
+      <select name="my car" id="car">
+          <option value="ind" selected>indica</option>
+          <option value="0di">odi</option>
+      </select>
+    </div>
+    
+    <!-- to submit the form -- for syntax just write input:sub and enter then this appear  inside value the text is shown on website where we can click and submit the result-->
+    <div>
+        <input type="submit" value="Submit now">  
+         <!--for reset  -->
+        <input type="reset" value="reset this">  
+    </div>
+</form>
+</body>
+</html>
