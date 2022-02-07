@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            
+            
+        }
+        body{
+            font-family: 'Lobster Two', cursive;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            /* margin auto means it takes center position */
+            margin: auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            background: rgb(223, 152, 152);
+        }
+        #fruit{
+        float: left;  /* it set the fruit(id) into left*/
+            width: 48%;
+        }
+         #computer{
+            float: left;  
+            width: 48%;
+         }
+
+         #stationary{
+            float: left;  
+            clear: left; /*no folat left element allow to overlap this*/
+            /* clear: both;  --->  na left na right are allowed */
+            width: 48%;
+         }
+
+         p,h3{
+             text-align: right;  /* text allign at right same as we can do left right center*/
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi delectus esse dignissimos excepturi rerum?</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi delectus esse dignissimos excepturi rerum?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationaypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi delectus esse dignissimos excepturi rerum?</p>
+        </div>
+    </div>
+</body>
+</html>

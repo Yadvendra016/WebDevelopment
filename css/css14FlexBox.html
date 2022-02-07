@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+.container{
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    /* initialise the container as a flexbox */
+    display: flex;  /* by doing this all my boxes come on same line*/
+
+    /* properties for the flex container */
+    flex-direction: row;  /* by default it is row*/ 
+    flex-direction: column; /* the boxes arrange in an column */
+    flex-direction: row-reverse;  /* it arrange in an row reverse order in right side  just like urdu*/
+    flex-direction: column-reverse; /* it arrange in an coloum reverse order */
+    flex-direction: row;
+
+    /* flex wrap by defoult it set as no wrap */
+    /* flex wrap -- when we minimise the screen for mobile boxes automatically ardjest */
+    flex-wrap: wrap;
+
+    flex-wrap: wrap-reverse; /* wrap in reverse order */
+
+    /* flex-flow: flex-direction flex-wrap */
+    flex-flow: row-reverse wrap;
+
+
+    /* very important for centering the box */
+    justify-content: center;
+
+    /* space between two boxes are same */
+    justify-content: space-between;
+
+    /* all space between the boxes including start and end are same */
+    justify-content: space-evenly;
+    
+    /* any boxes two sides space are same */
+    justify-content: space-around;
+
+
+    /* align item property */
+    /* for vertically center */
+    align-items: center;
+
+    align-items: flex-end; /* it comes at end vertically*/
+
+    align-items: stretch; /* it streach -- verically evenly space*/
+}
+.item{
+    width: 200px;
+    height: 200px;
+
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+}
+#item-1{
+    /* flex property for flex item */
+    order: 2; /* max order go at end */
+
+    flex-grow: 3; /* it takes 3 times more box space than other box (-ve number is invalid*/
+    flex-shrink: 3; /* it takes 3 times less box space than other box box shrink */
+}
+#item-2{
+    order: 40;
+    flex-basis: 320px;  /* when flex direction in set to row flex bsis will control width */
+    flex-basis: 320px;  /* when flex direction in set to coloumn flex bsis will control height*/
+}
+#item-3{
+
+    flex: 2 2 230px;  /* grow shrink basis*/
+
+    /* it goves to flex end similarly we can do for end center */
+    align-self: flex-end;
+}
+
+    </style>
+</head>
+<body>
+    <h1>this is Flexbox tutorial </h1>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <!-- <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fith box</div>
+        <div class="item" id="item-6">sixth box</div> -->
+    </div>
+</body>
+</html>
