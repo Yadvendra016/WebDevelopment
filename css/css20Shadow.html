@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow and Text Shadow</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .card {
+      padding: 23px 12px;
+      /* border: 2px solid red; */
+      margin: 23px 12px;
+      background-color: rgb(255, 127, 176);
+
+      /* box shadow */
+      /* it give shadow to the box and if we take -ve value then it display over */
+      box-shadow: 10px 13px green;  /* x  y  color*/
+
+      box-shadow: 5px 3px 10px green;  /* x  y   blur-radius color*/
+
+      box-shadow: 5px 3px 10px 34px green;  /* x  y   blur-radius spread-radius color*/
+ 
+      box-shadow: inset 11px 4px red;   /* inset it increase radius inside the box*/
+    }
+
+    .card h2{
+        /* text shadow */
+        text-shadow: 3px 4px white;
+        text-shadow: 3px 4px 2px white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h2>card1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi
+          quisquam, nulla porro, aperiam nemo voluptates officia quidem
+          voluptatibus laboriosam vel, ab illum quod exercitationem accusamus.
+          Voluptatem eveniet reprehenderit dicta!
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h2>card2</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque optio
+          maxime doloremque dolorem ut magnam rerum. Excepturi, alias. Itaque
+          totam quidem ex suscipit temporibus dolorum laudantium eos fugiat
+          voluptatibus amet.
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h2>card3</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi aut
+          dolor quo, quaerat praesentium, tempore minus reprehenderit doloribus
+          ullam adipisci accusantium id! Officia vel molestias autem animi sint,
+          nostrum hic!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(163, 131, 131);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(231, 218, 218);
+        }
+
+        /* a:hover means if we take our pointer on that then what happend */
+        a:hover{
+            color: green;
+            background-color: crimson;
+        }
+
+        /* a visited means if we click on button it visit me to any other website */
+        a:visited{
+            color: yellow;
+        }
+
+        /* a:active means if we visited on site using button then it change its appearance mention in this */
+        a:active{
+            background-color: burlywood;
+        }
+        .btn{
+            background-color: rebeccapurple;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur et eaque itaque. Explicabo eum nulla saepe non id, suscipit provident doloribus. Aliquid impedit, beatae dignissimos debitis incidunt ea delectus repellat quos tenetur quae!</p>
+
+       <a href="https://google.com" class="btn">Read more</a>   <!-- this dispay read more with text which usually we see -->
+        <button class="btn">contact us</button> <!-- this display a button name contact us-->
+    </div>
+</body>
+</html>

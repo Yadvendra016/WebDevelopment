@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position absolute, relative fixed and sticky in css</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: khaki;
+      }
+      .box1 {
+        display: inline-block; /*by using this all box come on same line and we can set their width as well height*/
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+      }
+      #box4 {
+        /* relative --> change realtive to its normal positon and will leave a gap at its normal position */
+        position: relative;
+
+        /* absolute --> position change relative to the its first parent (in this case container class) */
+        position: absolute;
+
+        /* fixed --> by this is fixed the position of box4 at right and if we scroll the window then this box fix their position */
+        position: fixed;
+        right: 4px;
+
+        /* sticky --> it fixed box position and by sliding the window it can not slide */
+        position: sticky;
+        top: 3px;
+
+        /* top: 34px;
+            left: 134px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>

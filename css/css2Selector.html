@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- using internal css -->
+
+    <!-- it is a element selector it apllied on all paragraph -->
+    <style>
+            p{
+                color: red;
+            }
+
+            /*  it is id selector it search for ids it search for id where id is written   */
+            #redElement{                /* if we write  . instead of # then it  work for class   */
+                   color: blue;
+            }
+
+            footer, span{
+                background-color: navy;
+                
+            }
+    </style>
+
+   
+</head>
+<body>
+    <h3> CSS Selectors</h3>
+    <p>this is a simple paragraph to demonstrate css selector</p>
+    <p id="redElement">this is a another simple paragraph to demonstrate css selector</p>
+    <div>
+        <p>this is a another simple paragraph to demonstrate css selector</p>
+
+        <span>this is span</span>
+        <footer>this is footer</footer>
+        
+    </div>
+</body>
+</html>

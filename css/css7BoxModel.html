@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+/* * is a universal selector */
+        * {
+             /* The box-sizing property allows us to include the padding and border in an element's total width and height. */
+            box-sizing: border-box;
+
+             /* it fix the value of margin and padding 0 until you overwrite this at  */
+             margin: 0;
+             padding: 0;
+         }
+
+        .container{
+            background-color: burlywood;
+            border: 3px solid rgba(229 4 251);
+
+            /* we can also set padding top botton left right individualy or mixture   */
+            /* padding: 19px; */
+            padding: 23px 63px 788px; /* padding/margin = top right bottom left*/
+
+          padding: 31px 19px;  /* padding: y(top/bottom) x(left/right);  */
+
+            /* msrgin concept */
+            /* margin: 32px; */
+            margin-top: 3px;
+
+            border-radius: 25px;
+            width: 544px;
+            
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laboriosam officia. Atque officia incidunt saepe. Consequuntur sed consequatur voluptates numquam, earum distinctio voluptatem.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laboriosam officia. Atque officia incidunt saepe. Consequuntur sed consequatur voluptates numquam, earum distinctio voluptatem.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laboriosam officia. Atque officia incidunt saepe. Consequuntur sed consequatur voluptates numquam, earum distinctio voluptatem.</p>
+    </div>
+    
+</body>
+</html>
