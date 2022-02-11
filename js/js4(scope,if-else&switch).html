@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = " this is a string";
+        var string1 = " this is a string2";
+        console.log(string1);
+        //  if we declare variable using a then a cannot be declare twice it is a scope level declaration ( global variable)
+        let a = "u";
+        {
+            let a = "u2" // it value is only inside this block
+        }
+
+        //constant -- this cannot be changed during program
+        const b = " this cannot be changed";
+        console.log(b);
+
+        // conditional
+        let age = 33;
+        if(age>18)
+        console.log("you can drink water")
+        else
+        console.log("you can drink wine");
+        
+
+    </script>
+</body>
+</html>
