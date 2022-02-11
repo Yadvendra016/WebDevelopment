@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String function</title>
+</head>
+
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        var postion = str.indexOf("is"); // it give first occurance of a substring (2)
+        console.log(postion);
+
+        postion = str.lastIndexOf("is"); // 5
+        console.log(postion);
+
+        // substirng from a string
+        var substr1 = str.slice(1, 5); // subslice is also take -ve value
+        var substr2 = str.substring(1, 7); //it work like slice but it does not take -ve value
+        var substr3 = str.substr(1, 7); // it takes index 1 to 7
+        console.log(substr1);
+
+        // replace in string
+        var replaced = str.replace("string", "yadvendra"); // it replace string by yadvendra
+        console.log(replaced);
+
+        //Lower case, upper case
+        console.log(str.toUpperCase()); // print -- THIS IS A STRING
+
+        // for adding string into string
+        var newString = str.concat(" new String");
+        console.log(newString); // print -- this is a string new string
+
+        // for removeing at starts and end white space using trim
+        var strWithWhitespaces = "  this contains       whiteSpaces  ";
+        console.log(strWithWhitespaces.trim());
+
+        // to find charector at any index
+        var char2 = str.charAt(2)  
+        console.log(char2);
+        
+    </script>
+</body>
+
+</html>
