@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is all about Loop
+        <script>
+            let i = 0;
+            for(i =0; i<=3; i++){
+                console.log(i);
+            }
+
+            // to modern javascrip (for each loop)
+        let friends = ["shukla, sanatt, vishwanath"];
+        friends.forEach(function f(element){
+            console.log("hello friends, " + element)
+        });
+
+        // for of loop
+        for(element of friends){
+            console.log("hello friends, " + element)
+        }
+
+        // for in loop -- lets take an example to understand this 
+        let employee = {
+            name: "Yadvendra Shukla",
+            salary: "2 billion $",
+            post: "ceo & cto"
+        }
+        // to itrate this using for in loop---> use this loop to itrate over object in Javascript
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        </script>
+    </div>
+</body>
+</html>
