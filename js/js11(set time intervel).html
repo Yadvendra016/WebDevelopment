@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetIntervel and set TimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time now is  <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is time intervel tutorial");
+
+        // setTimeout --> Allows us to run the function once after the intervel of Time
+        // clearTimeout --> Allows us to run the function repeatedly after the intervel of time
+        
+        function greet(name){
+            console.log("hello Good morning" + name);
+        }
+        // setTimeout(greet, 5000 , " Yadvendra");  // after 5 sec it print hello Good morning Yadvendra
+
+        // setTimeout(greet(), 5000 );  ---> Wrong as it is calling function inside setTimeout
+
+    //   timeout =   setTimeout(greet, 5000 , " Yadvendra");
+    //   console.log(timeout);
+
+    //   clearTimeout(timeout);  // clear time out use to clear the time out
+
+    //   IntervelId = setInterval(greet , 1000), " Yadvendra"; // it print every one second
+    //   clearInterval(IntervelId);
+
+    // function to display Time
+    function displayTime(){
+        time = new Date();
+        console.log(time);
+        doucment.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime, 1000);
+     
+    </script>
+</body>
+</html>
